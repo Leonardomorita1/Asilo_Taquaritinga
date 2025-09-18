@@ -1,0 +1,286 @@
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, var(--bg-2), var(--bg-3));
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(194, 160, 132, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-container {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, var(--cd-1), rgba(194, 160, 132, 0.7));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(194, 160, 132, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-container::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--cd-1), transparent, var(--cd-1));
+    border-radius: 14px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.logo-container:hover::before {
+    opacity: 1;
+}
+
+.logo-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(194, 160, 132, 0.4);
+}
+
+.logo-placeholder {
+    font-size: var(--tamanho-fonte-1);
+    font-weight: bold;
+    color: var(--bg-1);
+}
+
+.brand-name {
+    font-size: var(--tamanho-fonte-1);
+    font-weight: 600;
+    color: var(--text-1);
+    letter-spacing: -0.5px;
+}
+
+/* Navigation */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: var(--text-2);
+    text-decoration: none;
+    font-size: var(--tamanho-fonte-2);
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--cd-1);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover {
+    color: var(--text-1);
+    background: rgba(194, 160, 132, 0.1);
+}
+
+.nav-link:hover::before {
+    width: 80%;
+}
+
+.nav-link.active {
+    color: var(--cd-1);
+    background: rgba(194, 160, 132, 0.15);
+}
+
+.nav-link.active::before {
+    width: 80%;
+}
+
+/* CTA Button */
+.cta-button {
+    background: linear-gradient(135deg, var(--cd-1), rgba(194, 160, 132, 0.8));
+    color: var(--bg-1);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: var(--tamanho-fonte-3);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(194, 160, 132, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(194, 160, 132, 0.4);
+    background: linear-gradient(135deg, rgba(194, 160, 132, 1.1), var(--cd-1));
+}
+
+/* Mobile Menu Toggle */
+.mobile-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.mobile-toggle:hover {
+    background: rgba(194, 160, 132, 0.1);
+}
+
+.mobile-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--text-1);
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.mobile-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-2);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(194, 160, 132, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-menu.active {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mobile-nav {
+    list-style: none;
+    padding: 20px;
+}
+
+.mobile-nav .nav-item {
+    margin: 16px 0;
+}
+
+.mobile-nav .nav-link {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: rgba(48, 48, 48, 0.5);
+    margin: 8px 0;
+}
+
+.mobile-nav .cta-button {
+    margin-top: 16px;
+    text-align: center;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        height: 70px;
+        padding: 0 16px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-toggle {
+        display: flex;
+    }
+
+    .logo-container {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brand-name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        height: 65px;
+    }
+
+    .logo-section {
+        gap: 12px;
+    }
+
+    .logo-container {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-name {
+        font-size: 18px;
+    }
+}
