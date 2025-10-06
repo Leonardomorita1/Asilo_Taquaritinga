@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lar São Vicente de Paulo</title>
+    <link rel="stylesheet" href="assets/css/pages/doar.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="https://ssvptaquaritinga.com.br/wp-content/uploads/2022/11/ssvp-logo-04FCDEF145-seeklogo.com_.png"
+                alt="Logo SSVP">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="equipe.html">NOSSA EQUIPE</a></li>
+                <li><a href="doar.html">DOAR</a></li>
+                <li><a href="transparencia.html">TRANSPARÊNCIA</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <!-- Sidebar Mobile -->
+    <div class="sidebar" id="sidebar">
+        <button class="sidebar-close" onclick="toggleMenu()" aria-label="Fechar menu">
+            <i class="bi bi-x"></i>
+        </button>
+        <ul>
+            <li><a href="index.html" onclick="toggleMenu()">INÍCIO</a></li>
+            <li><a href="sobre.html" onclick="toggleMenu()">SOBRE</a></li>
+            <li><a href="equipe.html" onclick="toggleMenu()">NOSSA EQUIPE</a></li>
+            <li><a href="doar.html" onclick="toggleMenu()">DOAR</a></li>
+            <li><a href="transparencia.html" onclick="toggleMenu()">TRANSPARÊNCIA</a></li>
+        </ul>
+    </div>
+
+
+    <main>
+        <section class="container py-5 show-on-scroll text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4" style="color: var(--color-primary-dark);">Sua Ajuda Faz a
+                        Diferença!</h1>
+                    <p class="lead mb-5">
+                        No Lar São Vicente de Paulo, cada doação é um ato de amor que se transforma em cuidado,
+                        alimentação e bem-estar para nossos idosos. Contamos com sua generosidade para continuar nossa
+                        missão.
+                    </p>
+
+                    <div class="card p-4 shadow-md mb-5" style="border-radius: var(--radius-lg);">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold mb-4" style="color: var(--color-secondary);">Doe via Pix de
+                                forma rápida e segura!</h3>
+
+                            <!-- QR Code do Pix -->
+                            <div class="qr-code-container mb-4">
+                                <img src="assets/img/qrcode.png"
+                                    alt="QR Code Pix para doação" class="img-fluid rounded shadow-sm"
+                                    style="max-width: 250px;">
+                            </div>
+
+                            <!-- Chave Pix Copia e Cola -->
+                            <p class="mb-3 fw-bold" style="font-size: var(--font-size-lg);">Ou use a nossa Chave Pix:</p>
+                            <div class="input-group mb-4 justify-content-center">
+                                <input type="text" class="form-control text-center bg-light border-0" id="chavePix"
+                                    value="47.509.126/00001-03" readonly
+                                    style="max-width: 350px; font-size: var(--font-size-base); padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--radius-sm);">
+                                <button class="btn btn-primary ms-2" type="button" id="copyPixButton"
+                                    style="background-color: var(--color-primary); border-color: var(--color-primary);">
+                                    <i class="bi bi-clipboard"></i> Copiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="mb-4">
+                        Com sua doação, você ajuda a custear:
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center flex-wrap gap-4 mb-5">
+                        <li class="d-flex align-items-center me-3"><i class="bi bi-heart-fill me-2"
+                                style="color: var(--color-danger);"></i> Cuidados Médicos</li>
+                        <li class="d-flex align-items-center me-3"><i class="bi bi-truck me-2"
+                                style="color: var(--color-primary);"></i> Alimentação Balanceada</li>
+                        <li class="d-flex align-items-center me-3"><i class="bi bi-house-door-fill me-2"
+                                style="color: var(--color-primary-light);"></i> Manutenção da Estrutura</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-people-fill me-2"
+                                style="color: var(--color-accent);"></i> Atividades Recreativas</li>
+                    </ul>
+
+                    <p class="lead mt-5">
+                        Qualquer valor é muito bem-vindo e faz toda a diferença na vida de nossos acolhidos. Muito
+                        obrigado(a)!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <div id="footer">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3" id="text-color">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Home</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Features</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Pricing</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>FAQs</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>About</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3" id="text-color">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Home</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Features</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Pricing</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>FAQs</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>About</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3" id="text-color">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Home</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Features</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Pricing</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>FAQs</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>About</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form id="text-color">
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="email" class="form-control" placeholder="Email address" />
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+                    id="text-color">
+                    <p>&copy; 2025 Lar São Vicente de Paulo. Todos os direitos reservados.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3">
+                            <a href="#" aria-label="Instagram">
+                                <i class="bi bi-instagram footer-social-icon" style="font-size: 24px;"></i>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a href="#" aria-label="Facebook">
+                                <i class="bi bi-facebook footer-social-icon" style="font-size: 24px;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="assets/js/pages/sobre.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/global/global.js"></script>
+    <script src="assets/js/pages/doar.js"></script>
+</body>
+
+</html>

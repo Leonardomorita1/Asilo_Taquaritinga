@@ -1,0 +1,99 @@
+/* Menu */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: transform var(--transition-fast);
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Barra Lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: calc(var(--sidebar-width) * -1);
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-xl);
+    transition: right var(--transition-base);
+    z-index: 2000;
+    padding: var(--spacing-xxl) var(--spacing-lg) var(--spacing-lg);
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar-close {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: var(--color-gray-700);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.sidebar-close:hover {
+    color: var(--color-danger);
+    transform: rotate(90deg);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: var(--spacing-lg) 0;
+    border-bottom: 1px solid var(--color-gray-100);
+    padding-bottom: var(--spacing-sm);
+}
+
+.sidebar ul li:last-child {
+    border-bottom: none;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: var(--color-gray-700);
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    display: block;
+    transition: all var(--transition-base);
+    padding: var(--spacing-xs) 0;
+}
+
+.sidebar ul li a:hover {
+    color: var(--color-primary);
+    padding-left: var(--spacing-sm);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-base);
+    z-index: 1500;
+    backdrop-filter: blur(2px);
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,33 @@
+header {
+    padding: var(--spacing-md) var(--spacing-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-md);
+    z-index: 1000;
+    height: var(--header-height);
+}
+
+.logo {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--color-primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: transform var(--transition-fast);
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo img {
+    height: 50px;
+    margin-right: var(--spacing-sm);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}

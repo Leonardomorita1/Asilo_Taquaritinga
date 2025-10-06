@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lar São Vicente de Paulo</title>
+    <link rel="stylesheet" href="assets/css/pages/sobre.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="https://ssvptaquaritinga.com.br/wp-content/uploads/2022/11/ssvp-logo-04FCDEF145-seeklogo.com_.png"
+                alt="Logo SSVP">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="equipe.html">NOSSA EQUIPE</a></li>
+                <li><a href="doar.html">DOAR</a></li>
+                <li><a href="transparencia.html">TRANSPARÊNCIA</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <!-- Sidebar Mobile -->
+    <div class="sidebar" id="sidebar">
+        <button class="sidebar-close" onclick="toggleMenu()" aria-label="Fechar menu">
+            <i class="bi bi-x"></i>
+        </button>
+        <ul>
+            <li><a href="index.html" onclick="toggleMenu()">INÍCIO</a></li>
+            <li><a href="sobre.html" onclick="toggleMenu()">SOBRE</a></li>
+            <li><a href="equipe.html" onclick="toggleMenu()">NOSSA EQUIPE</a></li>
+            <li><a href="doar.html" onclick="toggleMenu()">DOAR</a></li>
+            <li><a href="transparencia.html" onclick="toggleMenu()">TRANSPARÊNCIA</a></li>
+        </ul>
+    </div>
+
+
+    <main>
+        <!-- Seção de Introdução -->
+        <section class="container py-5 show-on-scroll">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://img.freepik.com/fotos-gratis/vista-aerea-de-pessoas-segurando-caixa-de-doacao-cheia-de-comida_23-2150495861.jpg?t=st=1727763133~exp=1727766733~hm=4f7831f24d7790b407b32252a13f706d3d4b68e4c70a597a7604d5386f6d4d12&w=740"
+                        alt="Introdução da História" class="img-fluid rounded-3 shadow-md">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold mb-4 text-center text-md-start"
+                        style="color: var(--color-primary-dark);">Nossa Trajetória de Esperança</h1>
+                    <p class="lead">
+                        Desde nossa fundação em 1950, o Lar São Vicente de Paulo se dedica a oferecer acolhimento e
+                        dignidade aos idosos. Nossa história é construída com o carinho de voluntários, a generosidade
+                        de doadores e o sorriso de cada um de nossos residentes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Linha do Tempo -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-5" style="color: var(--color-primary-dark);">Nossa Linha do Tempo</h2>
+                <div class="timeline">
+                    <!-- Marco 1 -->
+                    <div class="timeline-item show-on-scroll">
+                        <div class="timeline-image">
+                            <img src="https://img.freepik.com/fotos-gratis/close-de-um-quadro-negro-com-um-desenho-simples-de-uma-casa_181624-5226.jpg?t=st=1727763261~exp=1727766861~hm=920e8b7468d601b17a57a660a92f026a798835820f4c07c6f2a58b88d227b941&w=740"
+                                alt="Fundação" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="timeline-panel card shadow-sm border-0">
+                            <div class="card-body">
+                                <h4 class="timeline-heading" style="color: var(--color-secondary);">1950 - A Fundação
+                                </h4>
+                                <p class="timeline-text">
+                                    Um pequeno grupo de voluntários, movido pela compaixão, uniu-se para criar um
+                                    refúgio seguro para os mais necessitados. A primeira casa foi modesta, mas o coração
+                                    de seus fundadores era imenso.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marco 2 -->
+                    <div class="timeline-item timeline-inverted show-on-scroll">
+                        <div class="timeline-image">
+                            <img src="https://img.freepik.com/fotos-gratis/casal-de-idosos-sorridente-passando-tempo-na-mesa-de-xadrez_23-2149175399.jpg?t=st=1727763321~exp=1727766921~hm=4f464016c6d048d08c4e402a5c9a40e1f7270e5b98a3b5a1b5c46e2f170f074d&w=740"
+                                alt="Expansão" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="timeline-panel card shadow-sm border-0">
+                            <div class="card-body">
+                                <h4 class="timeline-heading" style="color: var(--color-secondary);">1975 - Expansão e
+                                    Crescimento</h4>
+                                <p class="timeline-text">
+                                    Com a ajuda da comunidade, conseguimos expandir nossas instalações, oferecendo mais
+                                    leitos e uma variedade maior de atividades para os residentes. Nosso programa de
+                                    saúde também foi ampliado.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marco 3 -->
+                    <div class="timeline-item show-on-scroll">
+                        <div class="timeline-image">
+                            <img src="https://img.freepik.com/fotos-gratis/pessoas-de-vista-frontal-coletando-doacoes-para-a-comunidade_23-2149791484.jpg?t=st=1727763384~exp=1727766984~hm=172eb9321e8acb12e3e9d8e5e8e24c52f6c96e6d7870a44f77c385a42095f32a&w=740"
+                                alt="Novos Projetos" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="timeline-panel card shadow-sm border-0">
+                            <div class="card-body">
+                                <h4 class="timeline-heading" style="color: var(--color-secondary);">2000 - Novos
+                                    Projetos Sociais</h4>
+                                <p class="timeline-text">
+                                    Lançamos programas de alcance comunitário, como a distribuição de alimentos e apoio
+                                    a famílias carentes. Nossa missão cresceu para além dos muros do Lar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marco 4 -->
+                    <div class="timeline-item timeline-inverted show-on-scroll">
+                        <div class="timeline-image">
+                            <img src="https://img.freepik.com/fotos-gratis/vista-frontal-de-pessoas-sendo-agradaveis-entre-si_23-2149791550.jpg?t=st=1727763445~exp=1727767045~hm=504e0e5671184a445f1b1315e982187f583e747b960b73c829e59d4e9b922091&w=740"
+                                alt="Presente" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="timeline-panel card shadow-sm border-0">
+                            <div class="card-body">
+                                <h4 class="timeline-heading" style="color: var(--color-secondary);">Presente -
+                                    Celebrando a Vida</h4>
+                                <p class="timeline-text">
+                                    Hoje, continuamos nossa jornada com o mesmo espírito de generosidade. Estamos
+                                    investindo em tecnologia e infraestrutura para garantir o bem-estar e a qualidade de
+                                    vida dos nossos residentes por muitos anos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Agradecimento -->
+        <section class="py-5 text-center bg-primary">
+            <div class="container text-white show-on-scroll">
+                <h2 class="fw-bold display-5">Agradecemos a Você!</h2>
+                <p class="lead mb-4">
+                    Sua ajuda é fundamental para que essa história continue sendo escrita. Junte-se a nós e faça parte
+                    do futuro.
+                </p>
+                <a href="doar.html" class="btn btn-lg fw-bold"
+                    style="background-color: var(--color-secondary); color: var(--color-white);">
+                    Quero Doar
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <div id="footer">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3" id="text-color">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Home</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Features</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Pricing</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>FAQs</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>About</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3" id="text-color">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Home</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Features</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Pricing</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>FAQs</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>About</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3" id="text-color">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Home</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Features</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>Pricing</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>FAQs</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0">
+                                    <h6>About</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form id="text-color">
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="email" class="form-control" placeholder="Email address" />
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+                    id="text-color">
+                    <p>&copy; 2025 Lar São Vicente de Paulo. Todos os direitos reservados.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3">
+                            <a href="#" aria-label="Instagram">
+                                <i class="bi bi-instagram footer-social-icon" style="font-size: 24px;"></i>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a href="#" aria-label="Facebook">
+                                <i class="bi bi-facebook footer-social-icon" style="font-size: 24px;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="assets/js/pages/sobre.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/global/global.js"></script>
+</body>
+
+</html>
