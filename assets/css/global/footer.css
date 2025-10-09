@@ -1,0 +1,90 @@
+#footer {
+    background: linear-gradient(135deg, var(--color-gray-900) 0%, var(--color-gray-800) 100%);
+    color: var(--color-gray-400);
+    margin-top: var(--spacing-xxl);
+    word-break: break-all;
+}
+
+#text-color h5 {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+#text-color p,
+#text-color h6 {
+    color: var(--color-gray-400);
+}
+
+#text-color h6 {
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-base);
+}
+
+#text-color h6:hover {
+    color: var(--color-white);
+    padding-left: var(--spacing-xs);
+}
+
+#text-color .nav-link {
+    transition: all var(--transition-base);
+}
+
+#text-color .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-sm);
+}
+
+.footer-social-icon {
+    color: var(--color-gray-400);
+    transition: all var(--transition-base);
+}
+
+.footer-social-icon:hover {
+    color: var(--color-secondary);
+    transform: scale(1.2);
+}
+
+#footer .btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    transition: all var(--transition-base);
+}
+
+#footer .btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+#footer .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-gray-600);
+    color: var(--color-white);
+}
+
+#footer .form-control::placeholder {
+    color: var(--color-gray-500);
+}
+
+#footer .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0 0 0 0.2rem rgba(46, 92, 138, 0.25);
+}
+#text-color{
+    margin: 0;
+}
+
+#sobre a{
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+#sobre a:hover{
+    color: var(--color-white);
+    text-decoration: none;
+}

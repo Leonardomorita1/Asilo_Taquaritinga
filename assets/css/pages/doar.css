@@ -1,0 +1,98 @@
+@import url(../global/global.css);
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1px;
+    background-color: var(--color-gray-300);
+}
+
+.timeline-item {
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+}
+
+.timeline-item:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.timeline-item-inner {
+    position: relative;
+}
+
+.timeline-image {
+    position: absolute;
+    left: 50%;
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    background-color: var(--color-primary);
+    border: 7px solid var(--color-gray-50);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.timeline-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.timeline-panel {
+    position: relative;
+    width: 40%;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+}
+
+.timeline-item:not(.timeline-inverted) .timeline-panel {
+    float: left;
+}
+
+.timeline-item.timeline-inverted .timeline-panel {
+    float: right;
+}
+
+.timeline-item:not(.timeline-inverted) .timeline-panel::after {
+    border-right-width: 0;
+    border-left-width: 10px;
+    left: -10px;
+}
+
+.timeline-item.timeline-inverted .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 10px;
+    right: -10px;
+}
+
+.timeline-panel::after {
+    position: absolute;
+    top: 26px;
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid var(--color-white);
+    content: " ";
+    height: 0;
+    width: 0;
+}
+
+
+
+

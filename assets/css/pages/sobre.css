@@ -1,0 +1,86 @@
+@import url(../global/global.css);
+
+.card {
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    display: block;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+}
+
+.foto-svp{
+    width: 45%;
+    border-radius: 10px;
+}
+
+#fundadores{
+    margin: 150px 0 150px 0;
+}
+
+.carousel-container {
+    position: relative;
+    padding: 0 40px; /* Espaço para os botões */
+}
+
+.cards-wrapper {
+    display: flex;
+    overflow-x: auto; /* Permite a rolagem horizontal */
+    scroll-behavior: smooth; /* Adiciona a animação suave */
+    -ms-overflow-style: none; /* Esconde a barra de rolagem no IE e Edge */
+    scrollbar-width: none; /* Esconde a barra de rolagem no Firefox */
+}
+
+/* Esconde a barra de rolagem no WebKit (Chrome, Safari, etc) */
+.cards-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    flex-shrink: 0; /* Impede que os cards encolham */
+    width: 250px; /* Largura fixa para cada card */
+    margin-right: 15px;
+}
+
+.carousel-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .carousel-nav-btn {
+        display: none; /* Esconde os botões */
+    }
+    .carousel-container {
+        padding: 0; /* Remove o espaçamento extra */
+    }
+    .foto-svp{
+        width: 100%;
+    }
+}

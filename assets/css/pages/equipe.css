@@ -1,0 +1,38 @@
+@import url(../global/global.css);
+
+.team-member-card {
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    cursor: pointer;
+    border: 1px solid var(--color-gray-200);
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.team-member-card .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid var(--color-primary-light);
+}
+
+.team-member-card .card-body {
+    padding: var(--spacing-md);
+}
+
+.team-member-card .card-title {
+    margin-top: var(--spacing-sm);
+    margin-bottom: 0;
+}
+
+/* Efeito de hover nos links sociais */
+.team-member-card .list-unstyled a {
+    color: var(--color-gray-500);
+    transition: color var(--transition-fast);
+}
+
+.team-member-card .list-unstyled a:hover {
+    color: var(--color-primary);
+}
