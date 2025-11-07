@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p>Há mais de 192 anos proporcionando esperança e dignidade.</p>
                     
                     <div id="sobre">
-                        <a href="sobre.html">Saiba mais ⭢</a> 
+                        <a href="sobre.html"><i class="bi bi-arrow-return-right"></i> Saiba mais</a> 
                     </div>
                     
                 </div>
