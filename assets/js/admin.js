@@ -83,7 +83,7 @@ async function loadContatos() {
         const result = await window.storage.get('ssvp_contatos', true);
         if (result) {
             const data = JSON.parse(result.value);
-            document.getElementById('telefone').value = data.telefone || '';
+            document.getElementById('telefone').value = data.telefone || '(16) 3252-2121';
             document.getElementById('email').value = data.email || '';
             document.getElementById('endereco').value = data.endereco || '';
             document.getElementById('facebook').value = data.facebook || '';

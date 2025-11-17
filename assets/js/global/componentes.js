@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", async function () {
     // Carregar dados do admin
     const dados = await carregarDadosAdmin();
-    
+
     // Conteúdo do cabeçalho
     const headerHtml = `
     <header class="global-header">
@@ -45,20 +45,22 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Conteúdo do rodapé com dados dinâmicos
     const footerHtml = `
-    <div id="footer">
+<div id="footer">
     <div class="container">
         <footer class="py-5">
-            <div class="row">
+            <!-- Aplica centralização padrão em mobile e alinhamento à esquerda a partir de md -->
+            <div class="row text-center text-md-start">
                 <div class="col-md-5 offset-md-1 mb-3" id="text-color">
-                    <h5>SOCIEDADE DE SÃO VICENTE DE PAULA</h5>
+                    <h5>SOCIEDADE DE SÃO VICENTE DE PAULO</h5>
                     <p>Há mais de 192 anos proporcionando esperança e dignidade.</p>
                     
                     <div id="sobre">
                         <a href="sobre.html"><i class="bi bi-arrow-return-right"></i> Saiba mais</a> 
                     </div>
-                    
                 </div>
-                <div class="col-6 col-md-2 mb-3" id="text-color">
+
+                <!-- Adicionado col-12 para forçar a coluna a ocupar a largura total em telas pequenas -->
+                <div class="col-12 col-md-2 mb-3" id="text-color">
                     <h5>NAVEGAÇÃO</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2">
@@ -88,7 +90,9 @@ document.addEventListener("DOMContentLoaded", async function () {
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-2 mb-3" id="text-color">
+
+                <!-- Adicionado col-12 para forçar a coluna a ocupar a largura total em telas pequenas -->
+                <div class="col-12 col-md-2 mb-3" id="text-color">
                     <h5>CONTATOS</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2">
@@ -104,7 +108,9 @@ document.addEventListener("DOMContentLoaded", async function () {
                         ` : ''}
                     </ul>
                 </div>
-                <div class="col-6 col-md-2 mb-3" id="text-color">
+
+                <!-- Adicionado col-12 para forçar a coluna a ocupar a largura total em telas pequenas -->
+                <div class="col-12 col-md-2 mb-3" id="text-color">
                     <h5>SOCIAIS</h5>
                     <ul class="nav flex-column">
                         ${dados.contatos.facebook ? `
@@ -127,15 +133,17 @@ document.addEventListener("DOMContentLoaded", async function () {
                         ` : ''}
                     </ul>
                 </div>
-                
             </div>
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top" id="text-color">
-                <p>&copy; 2025 Lar São Vicente de Paulo. Todos os direitos reservados.</p>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-center text-sm-start" id="text-color">
+                <p class="mb-2 mb-sm-0">&copy; 2025 Lar São Vicente de Paulo. Todos os direitos reservados.</p>
                 <p><a href="admin.html" style="color: var(--color-gray-400); text-decoration: none;"><i class="bi bi-gear"></i> Admin</a></p>
             </div>
         </footer>
     </div>
 </div>
+
+
   `;
     document.getElementById('footer-placeholder').innerHTML = footerHtml;
 
@@ -227,7 +235,7 @@ async function carregarDadosAdmin() {
 async function carregarConteudoPagina(dados) {
     const pagina = window.location.pathname.split('/').pop();
 
-    switch(pagina) {
+    switch (pagina) {
         case 'index.html':
         case '':
             carregarIndex(dados);
@@ -248,7 +256,7 @@ function carregarIndex(dados) {
     if (carouselInner && dados.carrossel) {
         const imagens = [dados.carrossel.img1, dados.carrossel.img2, dados.carrossel.img3];
         const items = carouselInner.querySelectorAll('.carousel-item');
-        
+
         items.forEach((item, index) => {
             if (imagens[index]) {
                 const img = item.querySelector('img');
