@@ -34,3 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsWrapper.scrollLeft += cardWidth;
     });
 });
+
+if (!window.Storage) {
+    console.error('Storage API não disponível');
+}
