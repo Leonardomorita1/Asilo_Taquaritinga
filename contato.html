@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/pages/contato.css">
+    <link rel="icon" href="https://www.ssvpbrasil.org.br/source/files/c/885/DECOM__-_Logotipo_SSVP_Brasil_-_azul_e_branco_01-716579_1022-1028-0-0.jpg">
+    <title>Contato - Lar São Vicente de Paulo</title>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    
+    <section class="contact-section py-5">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5 fade-in-down">
+                    <h1>Fale Conosco</h1>
+                    <p class="lead text-muted">Estamos prontos para ouvir você. Entre em contato por um dos canais
+                        abaixo ou envie sua mensagem.</p>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card contact-card text-center card-hover fade-in-left delay-1">
+                        <div class="card-body">
+                            <i class="bi bi-geo-alt-fill contact-icon"></i>
+                            <h5 class="card-title">Endereço</h5>
+                            <p class="card-text">Rua Exemplo, 123 - Bairro<br>Cidade - UF, 12345-678</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card contact-card text-center card-hover fade-in-up delay-2">
+                        <div class="card-body">
+                            <i class="bi bi-telephone-fill contact-icon"></i>
+                            <h5 class="card-title">Telefone</h5>
+                            <p class="card-text">Atendimento Geral:<br>(XX) XXXX-XXXX</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-lg-4">
+                    <div class="card contact-card text-center card-hover fade-in-right delay-3">
+                        <div class="card-body">
+                            <i class="bi bi-envelope-at-fill contact-icon"></i>
+                            <h5 class="card-title">E-mail</h5>
+                            <p class="card-text">Envie sua mensagem para:<br>contato@larsvp.org.br</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="row g-5 align-items-center">
+
+                <div class="col-lg-6 map-container fade-in-left">
+                    <div class="ratio ratio-4x3"> 
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1268.3359849204649!2d-48.50658994255741!3d-21.403293326852104!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9396c54979ad9%3A0x24f576fc8085ac03!2sLar%20S%C3%A3o%20Vicente%20de%20Paulo!5e1!3m2!1spt-BR!2sbr!4v1759163889672!5m2!1spt-BR!2sbr"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 fade-in-right">
+                    <div class="contact-form-wrapper">
+                        <h3 class="mb-4 text-center text-lg-start">Envie sua Mensagem</h3>
+                        <form action="#" method="POST">
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">Nome Completo</label>
+                                <input type="text" class="form-control" id="fullName" name="fullName" required>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Telefone</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Assunto</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensagem</label>
+                                <textarea class="form-control w-100" id="message" name="message" rows="5"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-principal">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/global/global.js"></script>
+    <script src="assets/js/global/componentes.js"></script>
+</body>
+
+</html>

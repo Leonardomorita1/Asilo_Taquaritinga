@@ -1,0 +1,83 @@
+@import url(../../css/global/global.css);
+
+h1 {
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.contact-section {
+    background-color: #f9f9f9;
+}
+
+.contact-section h2,
+.contact-section h3 {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.contact-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card .card-body {
+    padding: 2rem;
+}
+
+.contact-card .contact-icon {
+    font-size: 2rem;
+    color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.contact-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.contact-card .card-text {
+    color: #555;
+    font-size: 1rem;
+}
+
+.map-container .ratio {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.contact-form-wrapper {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+
+.btn-principal {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.btn-principal:hover {
+    background-color: #073a1c;
+    border-color: #073a1c;
+    color: #fff;
+}

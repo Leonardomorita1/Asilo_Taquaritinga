@@ -1,91 +1,112 @@
-#footer {
-    background: linear-gradient(135deg, var(--color-gray-900) 0%, var(--color-gray-800) 100%);
-    color: var(--color-gray-400);
-    margin-top: var(--spacing-xxl);
-    word-break: break-all;
+.site-footer {
+    background-color: var(--color-gray-900);
+    color: var(--color-white);
 }
 
-#text-color h5 {
+.site-footer h5 {
     color: var(--color-secondary);
     font-weight: 600;
-    font-size: var(--font-size-lg);
-    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    font-size: 1.1rem;
 }
 
-#text-color p,
-#text-color h6 {
-    color: var(--color-gray-400);
-}
-
-#text-color h6 {
-    font-size: var(--font-size-sm);
-    transition: all var(--transition-base);
-}
-
-#text-color h6:hover {
+.footer-about p,
+.footer-contact-list li,
+.footer-links li a {
     color: var(--color-white);
-    padding-left: var(--spacing-xs);
+    font-size: 0.95rem;
 }
 
-#text-color .nav-link {
-    transition: all var(--transition-base);
-}
-
-#text-color .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: var(--radius-sm);
-}
-
-.footer-social-icon {
-    color: var(--color-gray-400);
-    transition: all var(--transition-base);
-}
-
-.footer-social-icon:hover {
+.btn-saiba-mais {
     color: var(--color-secondary);
-    transform: scale(1.2);
+    border: 1px solid var(--color-secondary);
+    font-size: 0.9rem;
+    padding: 5px 15px;
 }
 
-#footer .btn-primary {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
-    transition: all var(--transition-base);
+.btn-saiba-mais:hover {
+    background-color: var(--color-secondary);
+    color: var(--cor-fundo-footer);
+    border-color: var(--color-secondary);
 }
 
-#footer .btn-primary:hover {
-    background-color: var(--color-primary-dark);
-    border-color: var(--color-primary-dark);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+.footer-links li {
+    margin-bottom: 8px;
 }
 
-#footer .form-control {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: var(--color-gray-600);
-    color: var(--color-white);
+.footer-links a {
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-#footer .form-control::placeholder {
-    color: var(--color-gray-500);
+.footer-links a:hover {
+    color: #fff;
+    padding-left: 5px;
 }
 
-#footer .form-control:focus {
-    background-color: rgba(255, 255, 255, 0.15);
-    border-color: var(--color-primary);
-    color: var(--color-white);
-    box-shadow: 0 0 0 0.2rem rgba(46, 92, 138, 0.25);
+.footer-contact-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
 }
-#text-color{
+
+.footer-contact-list li i {
+    color: var(--color-secondary);
+    margin-right: 12px;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+/* --- Barra Inferior do Footer --- */
+.footer-bottom {
+    background-color: #111;
+    border-top: 1px solid #333;
+    color: var(--cor-texto-claro);
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
     margin: 0;
 }
 
-#sobre a{
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icon-circle:hover {
+    background-color: #fff;
     color: var(--color-secondary);
-    text-decoration: none;
 }
 
-#sobre a:hover{
-    color: var(--color-white);
-    text-decoration: none;
-}
+@media (max-width: 767.98px) {
 
+
+    .footer-links ul {
+        display: inline-block;
+        text-align: start;
+    }
+    .footer-links-list li {
+        text-align: center;
+    }
+
+    .footer-contact-list li {
+        justify-content: center;
+    }
+}

@@ -36,3 +36,7 @@
 .team-member-card .list-unstyled a:hover {
     color: var(--color-primary);
 }
+
+.row{
+    justify-content: center;
+}
